@@ -1,0 +1,14 @@
+[package]
+name = "kram-api-new"
+version = "0.1.0"
+edition = "2021"
+authors = ["Snipey <contact@snipey.dev>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+log = "0.4.17"
+serde = "1.0"
+rspotify = "0.11.5"
+sea-orm = { version = "^0", features = [ "sqlx-postgres", "runtime-actix-rustls", "macros" ] }
